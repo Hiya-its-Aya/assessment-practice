@@ -1,0 +1,29 @@
+{
+  "name": "assessment-practice",
+  "version": "1.0.0",
+  "description": "Assessment Practice  CRUD app with vanilla.js, express.js, w/ authentication and db of choice",
+  "main": "public/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hiya-its-Aya/assessment-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hiya-its-Aya/assessment-practice/issues"
+  },
+  "homepage": "https://github.com/Hiya-its-Aya/assessment-practice#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.4",
+    "nodemon": "^2.0.20",
+    "path": "^0.12.7",
+    "urlencode": "^1.1.0"
+  }
+}
