@@ -5,6 +5,7 @@ const cookieParser = require('cookie-parser');
 // const urlencoded = require('urlencode');
 // const apiRouter = require('./apiRouter');
 const mongoose = require('mongoose');
+const apiRouter = require('./apiRouter')
 
 const PORT =  process.env.PORT || 3000;
 
@@ -28,7 +29,7 @@ app.use('/', express.static(path.join(__dirname, '../public')))
 app.use('/signup', express.static(path.join(__dirname, '../public/signup.html')))
 app.use('/login', express.static(path.join(__dirname, '../public/login.html')))
 
-// app.use('/api', apiRouter)
+app.use('/api', apiRouter)
 
 //catchall
 app.use((req, res) => res.sendStatus(404).send(''));

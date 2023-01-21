@@ -4,9 +4,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Assesment </title>
+  <script src="index.js" defer></script>
+  <title>Assesment</title>
 </head>
 <body>
-  sign up
+  <h2>Sign up<h2>
+  <form action="http://localhost:3000/api/signup" method="post">
+    <label for="username"> Username:
+      <input type="text" name="username" id="signup-username">
+    </label>
+    <label for="password"> Password:
+      <input type="password" name="password" id="signup-password">
+    </label>
+    <button type="submit">Submit</button>
+  </form>
 </body>
 </html>
